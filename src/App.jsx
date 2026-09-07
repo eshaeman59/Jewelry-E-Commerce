@@ -10,9 +10,6 @@ import ProductSection from "./Components/ProductSection"
       <Hero/>
 
       <ProductSection/>
-      <h1> Jewelry Store 
-        <p> Beautiful jewelry, made for every moment.</p>
-      </h1>
 
     </div>
   )
