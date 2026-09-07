@@ -1,0 +1,239 @@
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: calc(100vh - 80px);
+    background: #FAF7F2;
+  
+    display: flex;
+    align-items: center;
+  
+    overflow: hidden;
+  }
+  
+  
+  /* ================================
+     HERO CONTAINER
+  ================================ */
+  
+  .hero-container {
+    width: 100%;
+    max-width: 1200px;
+  
+    margin: 0 auto;
+    padding: 80px 30px;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    align-items: center;
+  
+    gap: 80px;
+  }
+  
+  
+  /* ================================
+     HERO CONTENT
+  ================================ */
+  
+  .hero-content {
+    animation: heroContentFade 1s ease forwards;
+  }
+  
+  
+  /* Small heading */
+  
+  .hero-subtitle {
+    margin-bottom: 20px;
+  
+    font-size: 13px;
+    font-weight: 600;
+  
+    letter-spacing: 4px;
+  
+    color: #B8955A;
+  }
+  
+  
+  /* Main heading */
+  
+  .hero-content h1 {
+    max-width: 600px;
+  
+    margin-bottom: 25px;
+  
+    font-family: Georgia, serif;
+  
+    font-size: clamp(48px, 5vw, 76px);
+  
+    font-weight: 400;
+  
+    line-height: 1.05;
+  
+    letter-spacing: -2px;
+  
+    color: #24211E;
+  }
+  
+  .hero-content h1 span {
+    display: block;
+    color: #B8955A;
+  }
+  
+  
+  /* Description */
+  
+  .hero-description {
+    max-width: 470px;
+  
+    margin-bottom: 35px;
+  
+    font-size: 16px;
+  
+    line-height: 1.8;
+  
+    color: #6F6860;
+  }
+  
+  
+  /* ================================
+     BUTTONS
+  ================================ */
+  
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  
+  /* Primary button */
+  
+  .primary-btn {
+    padding: 15px 28px;
+  
+    border: 1px solid #B8955A;
+  
+    background: #B8955A;
+    color: #FFFFFF;
+  
+    font-size: 13px;
+    font-weight: 600;
+  
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  
+    transition:
+      background 0.3s ease,
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  
+  .primary-btn:hover {
+    background: #24211E;
+    border-color: #24211E;
+  
+    transform: translateY(-3px);
+  
+    box-shadow: 0 10px 25px rgba(36, 33, 30, 0.15);
+  }
+  
+  
+  /* Secondary button */
+  
+  .secondary-btn {
+    padding: 15px 28px;
+  
+    border: 1px solid #24211E;
+  
+    background: transparent;
+  
+    color: #24211E;
+  
+    font-size: 13px;
+    font-weight: 600;
+  
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  
+    transition:
+      background 0.3s ease,
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+  
+  .secondary-btn:hover {
+    background: #24211E;
+    color: #FFFFFF;
+  
+    transform: translateY(-3px);
+  }
+  
+  
+  /* ================================
+     HERO IMAGE
+  ================================ */
+  
+  .hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+  
+    animation: heroImageFade 1.2s ease forwards;
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-width: 500px;
+  
+    overflow: hidden;
+  
+    background: #E8DED0;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 620px;
+  
+    object-fit: cover;
+  
+    transition: transform 0.8s ease;
+  }
+  
+  .hero-image:hover img {
+    transform: scale(1.05);
+  }
+  
+  
+  /* ================================
+     ANIMATIONS
+  ================================ */
+  
+  @keyframes heroContentFade {
+  
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+  }
+  
+  
+  @keyframes heroImageFade {
+  
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+  }

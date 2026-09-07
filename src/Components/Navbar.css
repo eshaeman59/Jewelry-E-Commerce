@@ -1,0 +1,184 @@
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    width: 100%;
+    background: #FAF7F2;    border-bottom: 1px solid #eee7dc;
+  
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  
+  /* ================================
+     NAVBAR CONTAINER
+  ================================ */
+  
+  .navbar-container {
+    max-width: 1200px;
+    height: 80px;
+  
+    margin: 0 auto;
+    padding: 0 30px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  /* ================================
+     LOGO
+  ================================ */
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+  
+    letter-spacing: 4px;
+  
+    color: #24211E;
+      
+    cursor: pointer;
+  
+    transition: color 0.3s ease;
+  }
+  
+  .logo:hover {
+    color: #B8955A;
+    border-bottom: 1px solid #E8DED0;
+  }
+  
+  
+  /* ================================
+     NAVIGATION LINKS
+  ================================ */
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+  
+  .nav-links a {
+    position: relative;
+  
+    font-size: 15px;
+    font-weight: 500;
+  
+    color: #444;
+  
+    transition: color 0.3s ease;
+  }
+  
+  
+  /* Link hover color */
+  
+  .nav-links a:hover {
+    color: #b08d57;
+  }
+  
+  
+  /* Animated underline */
+  
+  .nav-links a::after {
+    content: "";
+  
+    position: absolute;
+  
+    left: 0;
+    bottom: -7px;
+  
+    width: 0;
+    height: 1px;
+  
+    background: #b08d57;
+  
+    transition: width 0.3s ease;
+  }
+  
+  
+  /* Underline appears on hover */
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  
+  /* ================================
+     CART
+  ================================ */
+  
+  .cart {
+    position: relative;
+  
+    font-size: 20px;
+  
+    cursor: pointer;
+  
+    transition: transform 0.3s ease;
+  }
+  
+  .cart:hover {
+    transform: translateY(-2px);
+  }
+  
+  
+  /* Cart quantity */
+  
+  .cart span {
+    position: absolute;
+  
+    top: -8px;
+    right: -10px;
+  
+    width: 17px;
+    height: 17px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background: #b08d57;
+    color: #ffffff;
+  
+    border-radius: 50%;
+  
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  /* ================================
+   CART INTERACTION
+================================ */
+
+.cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.cart:hover {
+  background: #f1ebe3;
+  transform: translateY(-2px);
+}
+
+.cart span {
+  transition: transform 0.2s ease;
+}
+
+.cart:hover span {
+  transform: scale(1.1);
+}
+
+.cart {
+  border: none;
+  padding: 0;
+  font-family: inherit;
+}
